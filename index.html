@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main>
+        <p>Our Little Bookstore</p>
+        <div class="btn">
+            <button type="button" id="newbook" class="newbook">New Book</button>
+        </div>
+        <div class="userInput" id="userInput">
+            <form id="form" class="form">
+                <div class="booktitle">
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="bookauthor">
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author">
+                </div>
+                <div class="bookpages">
+                    <label for="pages">Pages:</label>
+                    <input type="text" name="pages" id="pages">
+                </div>
+                <div class="bookread">
+                    <label for="read">Read:</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+                <div id="submitbtn">
+                    <button type="submit" class="submit" id="submit">Add Book</button>
+                    <button type="reset" class="clear" id="clear">Clear All</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="library" id="library">
+            <table id="table" class="table">
+                <thead>
+                    <tr>
+                        <th id="bookTitle">Title</th>
+                        <th id="bookAuthor">Author</th>
+                        <th id="bookPages">Pages</th>
+                        <th id="bookRead">Read</th>
+                        <th id="bookdelete">Remove</th>
+                        <th id="readbtn">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody" class="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="editUserInput" id="editUserInput">
+            <form id="editform" class="form">
+                <div class="booktitle">
+                    <label for="ed-title">Title:</label>
+                    <input type="text" name="ed-title" id="ed-title">
+                </div>
+                <div class="bookauthor">
+                    <label for="ed-author">Author:</label>
+                    <input type="text" name="ed-author" id="ed-author">
+                </div>
+                <div class="bookpages">
+                    <label for="ed-pages">Pages:</label>
+                    <input type="text" name="ed-pages" id="ed-pages">
+                </div>
+                <div id="submitbtn">
+                    <button type="submit" class="submit" id="save">Save</button>
+                    <button type="button" class="close" id="close">Close</button>
+                </div>
+            </form>
+        </div>
+        
+
+    </main>
+</body>
+</html>
